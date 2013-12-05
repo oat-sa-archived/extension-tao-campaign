@@ -1,72 +1,79 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TAO v2.5-alpha\n"
-"PO-Revision-Date: 2013-06-18T15:46:21\n"
-"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"PO-Revision-Date: 2013-11-10 16:56-0000\n"
+"Last-Translator: Paulo Amorim <paulo@amorims.com>\n"
 "MIME-Version: 1.0\n"
 "Language: pt-PT\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.5.7\n"
 
 msgid "Add to delivery campaign"
-msgstr ""
+msgstr "Adicionar à campanha de entrega"
 
 msgid "Campaign"
-msgstr ""
+msgstr "Campanha"
 
 msgid "Campaign Class saved"
-msgstr ""
+msgstr "Campanha de disciplina guardada"
 
 msgid "Campaign saved"
-msgstr ""
+msgstr "Campanha guardada"
 
 msgid "Campaigns library"
-msgstr ""
+msgstr "Biblioteca de campanhas"
 
 msgid "delete"
-msgstr ""
+msgstr "Eliminar"
 
-#, tao-public
 msgid "Deliveries"
-msgstr ""
+msgstr "Distribuir"
 
 msgid "duplicate"
-msgstr ""
+msgstr "duplicar"
 
 msgid "Edit Campaign"
-msgstr ""
+msgstr "Editar campanha"
 
 msgid "Edit campaign class"
-msgstr ""
+msgstr "Editar campanha de disciplina"
 
 msgid "export"
-msgstr ""
+msgstr "exportar"
 
-msgid "For instance, it is a way to organize deliveries with a common objectives."
+msgid ""
+"For instance, it is a way to organize deliveries with a common objectives."
 msgstr ""
+"Por exemplo, é uma maneira de organizar as distribuições com um objectivos "
+"comuns."
 
 msgid "import"
-msgstr ""
+msgstr "importar"
 
-#, tao-public
 msgid "Manage campaigns"
-msgstr ""
+msgstr "Gerir campanhas"
 
 msgid "move"
-msgstr ""
+msgstr "mover"
 
 msgid "new campaign"
-msgstr ""
+msgstr "nova campanha"
 
 msgid "new class"
-msgstr ""
+msgstr "nova disciplina"
 
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 msgid "search"
-msgstr ""
+msgstr "procurar"
 
-msgid "The Campaign Management Section allows to add, edit and assign Deliveries to Delivery Campaigns."
+msgid ""
+"The Campaign Management Section allows to add, edit and assign Deliveries to "
+"Delivery Campaigns."
 msgstr ""
-
+"A Secção de Gestão de campanhas permite adicionar, editar e atribuir "
+"distribuições de campanhas de entrega."
