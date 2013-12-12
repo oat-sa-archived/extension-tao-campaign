@@ -20,7 +20,7 @@
  */
 ?>
 <?php
-require_once dirname(__FILE__) . '/../../tao/test/TaoTestRunner.php';
+require_once dirname(__FILE__) . '/../../tao/test/TaoPhpUnitTestRunner.php';
 require_once dirname(__FILE__) . '/../includes/raw_start.php';
 
 /**
@@ -29,7 +29,7 @@ require_once dirname(__FILE__) . '/../includes/raw_start.php';
  * @package taoResults
  * @subpackage test
  */
-class CampaignTestCase extends UnitTestCase {
+class CampaignTestCase extends TaoPhpUnitTestRunner {
 	
 	/**
 	 * 
@@ -48,7 +48,7 @@ class CampaignTestCase extends UnitTestCase {
 	 */
 	public function setUp(){	
 		
-		TaoTestRunner::initTest();
+		TaoPhpUnitTestRunner::initTest();
 		$this->campaignService = taoCampaign_models_classes_CampaignService::singleton();
 		
 		
@@ -86,16 +86,16 @@ class CampaignTestCase extends UnitTestCase {
 	
 	public function testGetRelatedDeliveries(){
 	    $deliveries = $this->campaignService->getRelatedDeliveries($this->campaign);
-	     $this->assertEqual(count($deliveries), 1);
+	     $this->assertEquals(count($deliveries), 1);
 	    $delivery = new core_kernel_classes_Resource(array_pop($deliveries));
-	     $this->assertEqual($delivery->getLabel(), "MyDelivery");
+	     $this->assertEquals($delivery->getLabel(), "MyDelivery");
 	}
 	public function testIsCampaignClass(){
-	    $this->assertEqual($this->campaignService->isCampaignClass(new core_kernel_classes_Class(TAO_DELIVERY_CAMPAIGN_CLASS)), true);
-	    $this->assertEqual($this->campaignService->isCampaignClass($this->campaignClass), true);
+	    $this->assertEquals($this->campaignService->isCampaignClass(new core_kernel_classes_Class(TAO_DELIVERY_CAMPAIGN_CLASS)), true);
+	    $this->assertEquals($this->campaignService->isCampaignClass($this->campaignClass), true);
 	}
 	public function testgetRootClass(){
-	    $this->assertEqual($this->campaignService->getRootClass()->getUri(), TAO_DELIVERY_CAMPAIGN_CLASS);
+	    $this->assertEquals($this->campaignService->getRootClass()->getUri(), TAO_DELIVERY_CAMPAIGN_CLASS);
 	}
 	
 	public function tearDown(){
