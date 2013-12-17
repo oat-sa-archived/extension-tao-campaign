@@ -12,60 +12,62 @@ msgid "Add to delivery campaign"
 msgstr "Ajouter à la campagne de délivrance"
 
 msgid "Campaign"
-msgstr ""
+msgstr "Campagne"
 
 msgid "Campaign Class saved"
-msgstr ""
+msgstr "Classe Campagne enregistrée"
 
 msgid "Campaign saved"
-msgstr ""
+msgstr "Campagne enregistrée."
 
 msgid "Campaigns library"
-msgstr ""
+msgstr "Bibliothèque de campagnes"
 
 msgid "delete"
-msgstr ""
+msgstr "Supprimer"
 
 #, tao-public
 msgid "Deliveries"
 msgstr "Délivrances"
 
 msgid "duplicate"
-msgstr ""
+msgstr "Dupliquer"
 
 msgid "Edit Campaign"
-msgstr ""
+msgstr "Modifier la campagne"
 
 msgid "Edit campaign class"
-msgstr ""
+msgstr "Modifier la classe campagne"
 
 msgid "export"
-msgstr ""
+msgstr "Exporter"
 
 msgid "For instance, it is a way to organize deliveries with a common objectives."
 msgstr ""
+"Par exemple, c'est un moyen d'organiser des passations avec un objectif "
+"commun."
 
 msgid "import"
-msgstr ""
+msgstr "Importer"
 
 #, tao-public
 msgid "Manage campaigns"
-msgstr ""
+msgstr "Gérer les campagnes"
 
 msgid "move"
-msgstr ""
+msgstr "Déplacer"
 
 msgid "new campaign"
-msgstr ""
+msgstr "Nouvelle campagne"
 
 msgid "new class"
-msgstr ""
+msgstr "Nouvelle classe"
 
 msgid "Save"
 msgstr "Enregistrer"
 
 msgid "search"
-msgstr ""
+msgstr "Rechercher"
 
 msgid "Select delivery"
 msgstr "Choisissez la délivrance"
