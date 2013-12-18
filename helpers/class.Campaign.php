@@ -35,9 +35,7 @@ class taoCampaign_helpers_Campaign
 	public static function renderCampaignTree(core_kernel_classes_Resource $delivery) {
 
 		// ensure constant is known since this helper can be called out of context
-		$campaignExt = common_ext_ExtensionsManager::singleton()->getExtensionById('taoCampaign');
-		$loader = new common_ext_ExtensionLoader($campaignExt);
-		$loader->load();
+		common_ext_ExtensionsManager::singleton()->getExtensionById('taoCampaign')->load();
 		
 		$property = new core_kernel_classes_Property(TAO_DELIVERY_CAMPAIGN_PROP);
 		$tree = tao_helpers_form_GenerisTreeForm::buildTree($delivery, $property);
