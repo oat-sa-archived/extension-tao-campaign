@@ -15,14 +15,11 @@
 	<input type='hidden' name='classUri' value="<?=get_data('classUri')?>" />
 <?endif?>
 <script type="text/javascript">
-$(document).ready(function(){
-	
-	require(['require', 'jquery', 'generis.tree.select'], function(req, $, GenerisTreeSelectClass) {
-		new GenerisTreeSelectClass('#campaign-tree', '<?= _url('getCampaigns', 'Campaign', 'taoCampaign')?>', {
-			actionId: 'campaign',
-			saveUrl : '<?= _url('saveDeliveryCampaigns', 'Campaign', 'taoCampaign')?>',
-			checkedNodes : <?=get_data('relatedCampaigns')?>
-		});
-	});
-});
+    require(['jquery', 'generis.tree.select'], function($, GenerisTreeSelectClass) {
+            new GenerisTreeSelectClass('#campaign-tree', '<?= _url('getCampaigns', 'Campaign', 'taoCampaign')?>', {
+                    actionId: 'campaign',
+                    saveUrl : '<?= _url('saveDeliveryCampaigns', 'Campaign', 'taoCampaign')?>',
+                    checkedNodes : <?=get_data('relatedCampaigns')?>
+            });
+    });
 </script>
