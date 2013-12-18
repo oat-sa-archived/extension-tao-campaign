@@ -57,9 +57,7 @@ class taoCampaign_models_classes_CampaignService
 		parent::__construct();
 		
      	// ensure the taoCampaign extension is loaded, since it can be called from taoDelivery
-		$campaignExt = common_ext_ExtensionsManager::singleton()->getExtensionById('taoCampaign');
-		$loader = new common_ext_ExtensionLoader($campaignExt);
-		$loader->load();
+		common_ext_ExtensionsManager::singleton()->getExtensionById('taoCampaign')->load();
 		
 		$this->campaignClass = new core_kernel_classes_Class(TAO_DELIVERY_CAMPAIGN_CLASS);
     }
