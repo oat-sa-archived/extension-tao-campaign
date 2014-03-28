@@ -1,4 +1,8 @@
-<?include(TAO_TPL_PATH.'form_context.tpl')?>
+<?php
+use oat\tao\helpers\Template;
+
+Template::inc('form_context.tpl', 'tao');
+?>
 
 <?=get_data('deliveryTree')?>
 
@@ -10,5 +14,6 @@
 		<?=get_data('myForm')?>
 	</div>
 </div>
-
-<?include(TAO_TPL_PATH.'footer.tpl')?>
+<?php
+Template::inc('footer.tpl', 'tao')
+?>
