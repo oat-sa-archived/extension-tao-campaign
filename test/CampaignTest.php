@@ -27,7 +27,7 @@ require_once dirname(__FILE__) . '/../includes/raw_start.php';
  *
  * @author Patrick plichart, <patrick@taotesting.com>
  * @package taoResults
- * @subpackage test
+ 
  */
 class CampaignTestCase extends TaoPhpUnitTestRunner {
 	

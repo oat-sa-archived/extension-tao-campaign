@@ -24,7 +24,7 @@
  * @access public
  * @author Joel Bout, <joel@taotesting.com>
  * @package taoCampaign
- * @subpackage models_classes
+ 
  */
 class taoCampaign_models_classes_CampaignService
     extends tao_models_classes_ClassService

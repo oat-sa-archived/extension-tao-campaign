@@ -26,7 +26,7 @@
  * 
  * @author Bertrand Chevrier, <taosupport@tudor.lu>
  * @package taoCampaign
- * @subpackage actions
+ 
  * @license GPLv2  http://www.opensource.org/licenses/gpl-2.0.php
  */
 class taoCampaign_actions_SaSCampaign extends taoCampaign_actions_Campaign {
