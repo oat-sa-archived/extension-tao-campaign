@@ -76,7 +76,7 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = null;
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000204B begin
+        
 		if(is_null($clazz)){
 			$clazz = $this->campaignClass;
 		}
@@ -93,7 +93,7 @@ class taoCampaign_models_classes_CampaignService
 			}
 			$returnValue = $campaignClass;
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000204B end
+        
 
         return $returnValue;
     }
@@ -110,11 +110,11 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = (bool) false;
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000204D begin
+        
 		if(!is_null($campaign)){
 			$returnValue = $campaign->delete();
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000204D end
+        
 
         return (bool) $returnValue;
     }
@@ -131,13 +131,13 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = (bool) false;
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000204F begin
+        
 		if(!is_null($clazz)){
 			if($this->isCampaignClass($clazz) && $clazz->getUri() != $this->campaignClass->getUri()){
 				$returnValue = $clazz->delete();
 			}
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000204F end
+        
 
         return (bool) $returnValue;
     }
@@ -166,7 +166,7 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = array();
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:0000000000002059 begin
+        
 		if(!is_null($campaign)){
 		
 			$deliveryClass = new core_kernel_classes_Class(TAO_DELIVERY_CLASS);
@@ -177,7 +177,7 @@ class taoCampaign_models_classes_CampaignService
 				}
 			}
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:0000000000002059 end
+        
 
         return (array) $returnValue;
     }
@@ -208,7 +208,7 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = (bool) false;
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000205D begin
+        
 		if(!is_null($campaign)){
 			//the property of the DELIVERIES that will be modified
 			$campaignProp = new core_kernel_classes_Property(TAO_DELIVERY_CAMPAIGN_PROP);
@@ -240,7 +240,7 @@ class taoCampaign_models_classes_CampaignService
 				$returnValue = true;
 			}
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:000000000000205D end
+        
 
         return (bool) $returnValue;
     }
@@ -257,7 +257,7 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = array();
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:00000000000020C3 begin
+        
 		$campaigns = $delivery->getPropertyValues(new core_kernel_classes_Property(TAO_DELIVERY_CAMPAIGN_PROP));
 
 		if(count($campaigns)>0){
@@ -275,7 +275,7 @@ class taoCampaign_models_classes_CampaignService
 				$returnValue[] = $campaignUri;
 			}
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:00000000000020C3 end
+        
 
         return (array) $returnValue;
     }
@@ -293,7 +293,7 @@ class taoCampaign_models_classes_CampaignService
     {
         $returnValue = (bool) false;
 
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:00000000000020D1 begin
+        
 		if(!is_null($delivery)){
 
 			$campaignProp = new core_kernel_classes_Property(TAO_DELIVERY_CAMPAIGN_PROP);
@@ -309,7 +309,7 @@ class taoCampaign_models_classes_CampaignService
 				$returnValue = true;
 			}
 		}
-        // section 10-13-1-39-5129ca57:1276133a327:-8000:00000000000020D1 end
+        
 
         return (bool) $returnValue;
     }
