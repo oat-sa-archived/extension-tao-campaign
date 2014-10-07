@@ -21,7 +21,7 @@
                     <action id="campaign-properties" name="Properties"  url="/taoCampaign/Campaign/editCampaign" group="content" context="instance">
                         <icon id="icon-edit"/>
                     </action>
-                    <action id="campaign-filter" name="Filter" context="*" group="search" binding="launchFinder">
+                    <action id="campaign-filter" name="Filter" context="*" group="search" binding="filter">
                         <icon id="icon-filter"/>
                     </action>
                     <action id="campaign-search" name="Search" url="/taoCampaign/Campaign/search" context="*" group="search" binding="launchFinder">
