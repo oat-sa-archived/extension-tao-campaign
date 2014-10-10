@@ -1,19 +1,17 @@
 <?php
 use oat\tao\helpers\Template;
-
-Template::inc('form_context.tpl', 'tao');
 ?>
-
-<?=get_data('deliveryTree')?>
-
-<div class="main-container large">
-	<div id="form-title" class="ui-widget-header ui-corner-top ui-state-default">
-		<?=get_data('formTitle')?>
-	</div>
-	<div id="form-container" class="ui-widget-content ui-corner-bottom">
+<div class="main-container flex-container-main-form">
+	<h2><?=get_data('formTitle')?></h2>
+	<div id="form-container">
 		<?=get_data('myForm')?>
 	</div>
 </div>
+
+<div class="data-container-wrapper flex-container-remainer">
+    <?=get_data('deliveryTree')?>
+</div>
+
 <?php
-Template::inc('footer.tpl', 'tao')
+Template::inc('form-footer.tpl', 'tao')
 ?>
