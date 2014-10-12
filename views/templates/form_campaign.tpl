@@ -13,5 +13,5 @@ use oat\tao\helpers\Template;
 </div>
 
 <?php
-Template::inc('form-footer.tpl', 'tao')
+Template::inc('footer.tpl', 'tao')
 ?>
