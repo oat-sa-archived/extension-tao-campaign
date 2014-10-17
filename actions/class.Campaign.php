@@ -99,7 +99,7 @@ class taoCampaign_actions_Campaign extends tao_actions_SaSModule {
 		if($myForm->isSubmited()){
 			if($myForm->isValid()){
 				if($clazz instanceof core_kernel_classes_Resource){
-					$this->setSessionAttribute("showNodeUri", tao_helpers_Uri::encode($clazz->getUri()));
+					$this->setData("selectNode", tao_helpers_Uri::encode($clazz->getUri()));
 				}
 				$this->setData('message', __('Campaign Class saved'));
 				$this->setData('reload', true);
@@ -128,12 +128,11 @@ class taoCampaign_actions_Campaign extends tao_actions_SaSModule {
 				$binder = new tao_models_classes_dataBinding_GenerisFormDataBinder($campaign);
 				$campaign = $binder->bind($myForm->getValues());
 				
+		        $this->setData("selectNode", tao_helpers_Uri::encode($campaign->getUri()));
 				$this->setData('message', __('Campaign saved'));
 				$this->setData('reload', true);
 			}
 		}
-		
-		$this->setSessionAttribute("showNodeUri", tao_helpers_Uri::encode($campaign->getUri()));
 		
 		//get the deliveries related to this delivery campaign
 		$prop = new core_kernel_classes_Property(TAO_DELIVERY_CAMPAIGN_PROP);
