@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: TAO v2.7\n"
-"PO-Revision-Date: 2014-10-14T10:43:29\n"
+"Project-Id-Version: TAO v3.0\n"
+"PO-Revision-Date: 2014-10-21T07:51:19\n"
 "Last-Translator: TAO Translation Team <translation@tao.lu>\n"
 "MIME-Version: 1.0\n"
 "Language: pt-PT\n"
@@ -13,30 +13,30 @@ msgstr ""
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryCampaign
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "Campaign"
-msgstr ""
+msgstr "Campaign"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryCampaign
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
 msgid "Campaign"
-msgstr ""
+msgstr "Campaign"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignStart
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "Campaign Start"
-msgstr ""
+msgstr "Campaign Start"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignStart
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
-msgid "The start date of the campaign"
-msgstr ""
+msgid "Campaign Start"
+msgstr "The start date of the campaign"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignEnd
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "Campaign End"
-msgstr ""
+msgstr "Campaign End"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignEnd
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
-msgid "The end date of the campaign"
-msgstr ""
+msgid "Campaign End"
+msgstr "The end date of the campaign"
 
