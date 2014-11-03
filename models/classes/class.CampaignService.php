@@ -313,6 +313,4 @@ class taoCampaign_models_classes_CampaignService
 
         return (bool) $returnValue;
     }
-} /* end of class taoCampaign_models_classes_CampaignService */
-
-?>
+}
