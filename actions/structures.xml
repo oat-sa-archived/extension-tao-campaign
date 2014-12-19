@@ -8,6 +8,7 @@
 					<tree name="Campaigns library"
 						className="Campaign"
 						dataUrl="/taoCampaign/Campaign/getCampaigns"
+                        rootNode="http://www.tao.lu/Ontologies/TAODelivery.rdf#Campaign"
                         selectClass="campaign-class-properties"
                         selectInstance="campaign-properties"
                         moveInstance="campaign-move"
