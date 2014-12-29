@@ -16,7 +16,7 @@
 					/>
 				</trees>
 				<actions>
-					<action id="campaign-class-properties" name="Properties" url="/taoCampaign/Campaign/editClass" group="content" context="class">
+					<action id="campaign-class-properties" name="Properties" url="/taoCampaign/Campaign/editClassProperties" group="content" context="class">
                         <icon id="icon-edit"/>
                     </action>
                     <action id="campaign-properties" name="Properties"  url="/taoCampaign/Campaign/editCampaign" group="content" context="instance">
