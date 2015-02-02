@@ -7,11 +7,12 @@ module.exports = function(grunt) {
     var root        = grunt.option('root');
     var libs        = grunt.option('mainlibs');
     var ext         = require(root + '/tao/views/build/tasks/helpers/extensions')(grunt, root);
+    var out         = 'output/taoCampaign';
 
     /**
      * Remove bundled and bundling files
      */
-    clean.taocampaignbundle = ['output',  root + '/taoCampaign/views/js/controllers.min.js'];
+    clean.taocampaignbundle = [out,  root + '/taoCampaign/views/js/controllers.min.js'];
     
     /**
      * Compile tao files into a bundle 
@@ -19,7 +20,7 @@ module.exports = function(grunt) {
     requirejs.taocampaignbundle = {
         options: {
             baseUrl : '../js',
-            dir : 'output',
+            dir : out,
             mainConfigFile : './config/requirejs.build.js',
             paths : { 'taoCampaign' : root + '/taoCampaign/views/js' },
             modules : [{
@@ -35,8 +36,8 @@ module.exports = function(grunt) {
      */
     copy.taocampaignbundle = {
         files: [
-            { src: ['output/taoCampaign/controller/routes.js'],  dest: root + '/taoCampaign/views/js/controllers.min.js' },
-            { src: ['output/taoCampaign/controller/routes.js.map'],  dest: root + '/taoCampaign/views/js/controllers.min.js.map' }
+            { src: [out + '/taoCampaign/controller/routes.js'],  dest: root + '/taoCampaign/views/js/controllers.min.js' },
+            { src: [out + '/taoCampaign/controller/routes.js.map'],  dest: root + '/taoCampaign/views/js/controllers.min.js.map' }
         ]
     };
 
