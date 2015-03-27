@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: TAO 3.0-RC04\n"
+"PO-Revision-Date: 2015-03-06T15:57:15\n"
+"Last-Translator: TAO Translation Team <translation@tao.lu>\n"
+"MIME-Version: 1.0\n"
+"Language: fr-FR\n"
+"sourceLanguage: en-US\n"
+"targetLanguage: fr-FR\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryCampaign
+msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
+msgid "Campaign"
+msgstr "Campagne"
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryCampaign
+msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
+msgid "Campaign"
+msgstr "La propriété Campagne"
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignStart
+msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
+msgid "Campaign Start"
+msgstr "Début de campagne"
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignStart
+msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
+msgid "The start date of the campaign"
+msgstr ""
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignEnd
+msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
+msgid "Campaign End"
+msgstr "Fin de campagne"
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignEnd
+msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
+msgid "The end date of the campaign"
+msgstr ""
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignStart
+msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
+msgid "Campaign Start"
+msgstr "La date de début de la campagne"
+
+# http://www.tao.lu/Ontologies/TAODelivery.rdf#CampaignEnd
+msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
+msgid "Campaign End"
+msgstr "La date de fin de campagne"
+

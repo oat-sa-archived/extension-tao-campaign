@@ -39,6 +39,10 @@ return array(
 	'requires' => array(
 		'taoDelivery' => '2.6'
 	),
+	'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#taoCampaignManager',
+    'acl' => array(
+        array('grant', 'http://www.tao.lu/Ontologies/generis.rdf#taoCampaignManager', array('ext'=>'taoCampaign')),
+    ),
 	'models' => array(
 		'http://www.tao.lu/Ontologies/TAODelivery.rdf'
 	),

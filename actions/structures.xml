@@ -8,49 +8,45 @@
 					<tree name="Campaigns library"
 						className="Campaign"
 						dataUrl="/taoCampaign/Campaign/getCampaigns"
-						editClassUrl="/taoCampaign/Campaign/editCampaignClass"
-						editInstanceUrl="/taoCampaign/Campaign/editCampaign"
-						addInstanceUrl="/taoCampaign/Campaign/addCampaign"
-						addSubClassUrl="/taoCampaign/Campaign/addCampaignClass"
-						deleteUrl="/taoCampaign/Campaign/delete"
-						duplicateUrl="/taoCampaign/Campaign/cloneInstance"
-						moveInstanceUrl="/taoCampaign/Campaign/moveInstance"
+                        rootNode="http://www.tao.lu/Ontologies/TAODelivery.rdf#Campaign"
+                        selectClass="campaign-class-properties"
+                        selectInstance="campaign-properties"
+                        moveInstance="campaign-move"
+                        delete="campaign-delete"
 					/>
 				</trees>
 				<actions>
-					          <action name="Edit class" url="/taoCampaign/Campaign/editCampaignClass" group="content" context="class">
+					<action id="campaign-class-properties" name="Properties" url="/taoCampaign/Campaign/editClassProperties" group="content" context="class">
                         <icon id="icon-edit"/>
                     </action>
-                    
-                    <action name="Edit campaign"  url="/taoCampaign/Campaign/editCampaign" group="content" context="instance">
+                    <action id="campaign-properties" name="Properties"  url="/taoCampaign/Campaign/editCampaign" group="content" context="instance">
                         <icon id="icon-edit"/>
                     </action>
-                    
-                    <action name="Filter" context="*" group="search" binding="launchFinder">
+                    <action id="campaign-filter" name="Filter" context="*" group="search" binding="filter">
                         <icon id="icon-filter"/>
                     </action>
-                    <action name="Search" url="/taoCampaign/Campaign/search" context="*" group="search" binding="launchFinder">
+                    <action id="campaign-search" name="Search" url="/taoCampaign/Campaign/search" context="*" group="search" binding="launchFinder">
                         <icon id="icon-find"/>
                     </action>
-                    <action name="New class" url="/taoCampaign/Campaign/addCampaignClass" context="class" group="content" binding="subClass">
+                    <action id="campaign-new-class" name="New class" url="/taoCampaign/Campaign/addCampaignClass" context="class" group="content" binding="subClass">
                         <icon id="icon-folder-open"/>
                     </action>                    
-                    <action name="New campaign" url="/taoCampaign/Campaign/addCampaign" context="class" group="content" binding="instanciate">
+                    <action id="campaign-new" name="New campaign" url="/taoCampaign/Campaign/addCampaign" context="class" group="content" binding="instanciate">
                         <icon id="icon-users"/>
                     </action>
-                    <action name="Delete" url="/taoCampaign/Campaign/delete" context="resource" group="tree" binding="removeNode">
+                    <action id="campaign-delete" name="Delete" url="/taoCampaign/Campaign/delete" context="resource" group="tree" binding="removeNode">
                         <icon id="icon-bin"/>
                     </action>
-                    <action name="Duplicate" url="/taoCampaign/Campaign/cloneInstance" context="instance" group="tree" binding="duplicateNode">
+                    <action id="campaign-duplicate" name="Duplicate" url="/taoCampaign/Campaign/cloneInstance" context="instance" group="tree" binding="duplicateNode">
                         <icon id="icon-copy"/>
                     </action>
-                    <action name="Move" url="" context="instance" group="tree" binding="moveNode">
+                    <action id="campaign-move" name="Move" url="/taoCampaign/Campaign/moveInstance" context="instance" group="none" binding="moveNode">
                         <icon id="icon-move-item"/>
                     </action>
-                    <action name="Export" url="/tao/Export/index" context="resource" group="content">
+                    <action id="campaign-export" name="Export" url="/tao/Export/index" context="resource" group="content">
                         <icon id="icon-export"/>
                     </action>
-                    <action name="Import" url="/tao/Import/index" context="class" group="content">
+                    <action id="campaign-import" name="Import" url="/tao/Import/index" context="class" group="content">
                         <icon id="icon-import"/>
                     </action>
 				</actions>
