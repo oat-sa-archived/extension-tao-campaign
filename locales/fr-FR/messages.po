@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: TAO 3.0-RC04\n"
-"PO-Revision-Date: 2015-03-06T15:57:15\n"
+"Project-Id-Version: TAO 3.0-RC05\n"
+"PO-Revision-Date: 2015-04-09T09:19:56\n"
 "Last-Translator: TAO Translation Team <translation@tao.lu>\n"
 "MIME-Version: 1.0\n"
 "Language: fr-FR\n"
@@ -22,9 +22,11 @@ msgstr ""
 msgid "Campaign saved"
 msgstr ""
 
+#, tao-public
 msgid "Campaigns library"
 msgstr ""
 
+#, tao-public
 msgid "Delete"
 msgstr ""
 
@@ -32,21 +34,25 @@ msgstr ""
 msgid "Deliveries"
 msgstr ""
 
+#, tao-public
 msgid "Duplicate"
 msgstr ""
 
 msgid "Edit Campaign"
 msgstr ""
 
+#, tao-public
 msgid "Export"
 msgstr ""
 
+#, tao-public
 msgid "Filter"
 msgstr ""
 
 msgid "For instance, it is a way to organize deliveries with a common objectives."
 msgstr ""
 
+#, tao-public
 msgid "Import"
 msgstr ""
 
@@ -54,18 +60,23 @@ msgstr ""
 msgid "Manage campaigns"
 msgstr ""
 
+#, tao-public
 msgid "Move"
 msgstr ""
 
+#, tao-public
 msgid "New campaign"
 msgstr ""
 
+#, tao-public
 msgid "New class"
 msgstr ""
 
+#, tao-public
 msgid "Properties"
 msgstr ""
 
+#, tao-public
 msgid "Search"
 msgstr ""
 
