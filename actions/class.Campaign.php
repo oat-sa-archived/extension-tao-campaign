@@ -55,7 +55,6 @@ class taoCampaign_actions_Campaign extends tao_actions_SaSModule {
 	/**
 	 * Render json data to populate the campaign tree 
 	 * 'modelType' must be in the request parameters
-	 * @return void
 	 */
 	public function getCampaigns(){
 		
@@ -64,15 +63,10 @@ class taoCampaign_actions_Campaign extends tao_actions_SaSModule {
 		}
 		
 		$options = array(
-			'subclasses' => true, 
-			'instances' => true, 
-			'highlightUri' => '', 
-			'labelFilter' => '', 
+			'instances' => true,
 			'chunk' => false
 		);
-		if($this->hasRequestParameter('filter')){
-			$options['labelFilter'] = $this->getRequestParameter('filter');
-		}
+
 		if($this->hasRequestParameter('classUri')){
 			$clazz = $this->getCurrentClass();
 			$options['chunk'] = true;
