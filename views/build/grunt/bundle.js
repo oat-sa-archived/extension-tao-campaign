@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             modules : [{
                 name: 'taoCampaign/controller/routes',
                 include : ext.getExtensionsControllers(['taoCampaign']),
-                exclude : ['mathJax', 'mediaElement'].concat(libs)
+                exclude : ['mathJax'].concat(libs)
             }]
         }
     };
