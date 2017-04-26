@@ -34,7 +34,7 @@ return array(
     'label' => 'Campaign management',
 	'description' => 'TAO Campaign extension',
     'license' => 'GPL-2.0',
-    'version' => '2.6',
+    'version' => '3.0',
 	'author' => 'Open Assessment Technologies',
 	'requires' => array(
 		'taoDelivery' => '2.6'
@@ -71,8 +71,5 @@ return array(
 	
 		#BASE URL (usually the domain root)
 		'BASE_URL'				=> ROOT_URL . 'taoCampaign/',
-	
-		#BASE WWW the web resources path
-		'BASE_WWW'				=> ROOT_URL . 'taoCampaign/views/',
 	)
 );
