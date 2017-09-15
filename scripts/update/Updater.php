@@ -18,7 +18,7 @@
  *
  *
  */
-namespace oat\taoBackOffice\scripts\update;
+namespace oat\taoCampaign\scripts\update;
 
 class Updater extends \common_ext_ExtensionUpdater {
 
