@@ -34,7 +34,7 @@ return array(
     'label' => 'Campaign management',
 	'description' => 'TAO Campaign extension',
     'license' => 'GPL-2.0',
-    'version' => '2.6',
+    'version' => '2.7.0',
 	'author' => 'Open Assessment Technologies',
 	'requires' => array(
 		'taoDelivery' => '2.6'
