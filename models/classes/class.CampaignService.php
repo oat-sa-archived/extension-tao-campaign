@@ -18,6 +18,9 @@
  *               2009-2012 (update and modification) Public Research Centre Henri Tudor (under the project TAO-SUSTAIN & TAO-DEV);
  * 
  */
+
+use oat\tao\model\TaoOntology;
+
 /**
  * Service to handle delivery campaigns
  *
@@ -169,7 +172,7 @@ class taoCampaign_models_classes_CampaignService
         
 		if(!is_null($campaign)){
 		
-			$deliveryClass = new core_kernel_classes_Class(TAO_DELIVERY_CLASS);
+			$deliveryClass = new core_kernel_classes_Class(TaoOntology::DELIVERY_CLASS);
 			$deliveries = $deliveryClass->searchInstances(array(TAO_DELIVERY_CAMPAIGN_PROP => $campaign->getUri()), array('like'=>false, 'recursive' => 0));
 			foreach ($deliveries as $delivery){
 				if($delivery instanceof core_kernel_classes_Resource ){
@@ -214,7 +217,7 @@ class taoCampaign_models_classes_CampaignService
 			$campaignProp = new core_kernel_classes_Property(TAO_DELIVERY_CAMPAIGN_PROP);
 			
 			//a way to remove the campaign property value of the delivery that are used to be associated to THIS campaign
-			$deliveryClass = new core_kernel_classes_Class(TAO_DELIVERY_CLASS);
+			$deliveryClass = new core_kernel_classes_Class(TaoOntology::DELIVERY_CLASS);
 			$oldDeliveries = $deliveryClass->searchInstances(array(TAO_DELIVERY_CAMPAIGN_PROP => $campaign->getUri()), array('like'=>false, 'recursive' => 0));
 			foreach ($oldDeliveries as $oldRelatedDelivery) {
 				//find a way to remove the property value associated to THIS campaign ONLY

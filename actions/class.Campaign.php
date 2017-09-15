@@ -21,6 +21,9 @@
  */
 ?>
 <?php
+
+use oat\tao\model\TaoOntology;
+
 /**
  * Campaign Controller provide actions performed from url resolution
  * 
@@ -209,7 +212,7 @@ class taoCampaign_actions_Campaign extends tao_actions_SaSModule {
 			$options['chunk'] = true;
 		}
 		else{
-			$clazz = new core_kernel_classes_Class(TAO_DELIVERY_CLASS);
+			$clazz = new core_kernel_classes_Class(TaoOntology::DELIVERY_CLASS);
 		}
 		if($this->hasRequestParameter('selected')){
 			$selected = $this->getRequestParameter('selected');
