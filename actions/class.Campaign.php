@@ -212,7 +212,7 @@ class taoCampaign_actions_Campaign extends tao_actions_SaSModule {
 			$options['chunk'] = true;
 		}
 		else{
-			$clazz = new core_kernel_classes_Class(TaoOntology::DELIVERY_CLASS);
+			$clazz = new core_kernel_classes_Class(TaoOntology::DELIVERY_CLASS_URI);
 		}
 		if($this->hasRequestParameter('selected')){
 			$selected = $this->getRequestParameter('selected');
