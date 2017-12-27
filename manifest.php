@@ -34,9 +34,10 @@ return array(
     'label' => 'Campaign management',
 	'description' => 'TAO Campaign extension',
     'license' => 'GPL-2.0',
-    'version' => '2.6',
+    'version' => '2.7.0',
 	'author' => 'Open Assessment Technologies',
 	'requires' => array(
+	    'tao' => '>=12.21.0',
 		'taoDelivery' => '2.6'
 	),
 	'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#taoCampaignManager',
@@ -46,6 +47,7 @@ return array(
 	'models' => array(
 		'http://www.tao.lu/Ontologies/TAODelivery.rdf'
 	),
+	'update' => 'oat\taoCampaign\scripts\update\Updater',
 	'install' => array(
 		'rdf' => array(
 			dirname(__FILE__). '/models/ontology/taoCampaign.rdf',

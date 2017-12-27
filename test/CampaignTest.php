@@ -21,6 +21,7 @@
 
 namespace oat\taoCampaign\test;
 
+use oat\tao\model\TaoOntology;
 use oat\tao\test\TaoPhpUnitTestRunner;
 use \taoCampaign_models_classes_CampaignService;
 use \core_kernel_classes_Class;
@@ -72,7 +73,7 @@ class CampaignTestCase extends TaoPhpUnitTestRunner
         
         $this->campaign = $this->campaignClass->createInstance("MyCampaign");
         
-        $deliveryClass = new core_kernel_classes_Class(TAO_DELIVERY_CLASS);
+        $deliveryClass = new core_kernel_classes_Class(TaoOntology::DELIVERY_CLASS_URI);
         $this->delivery = $deliveryClass->createInstance("MyDelivery");
         
         $this->campaignService->setRelatedDeliveries($this->campaign, array(
