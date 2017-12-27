@@ -37,6 +37,7 @@ return array(
     'version' => '2.7.0',
 	'author' => 'Open Assessment Technologies',
 	'requires' => array(
+	    'tao' => '>=12.21.0',
 		'taoDelivery' => '2.6'
 	),
 	'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#taoCampaignManager',
