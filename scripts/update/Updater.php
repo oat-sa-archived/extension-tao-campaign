@@ -23,6 +23,6 @@ namespace oat\taoCampaign\scripts\update;
 class Updater extends \common_ext_ExtensionUpdater {
 
     public function update($initialVersion) {
-		$this->skip('2.6', '2.7.0');
+		$this->skip('2.6', '2.7.1');
 	}
 }
