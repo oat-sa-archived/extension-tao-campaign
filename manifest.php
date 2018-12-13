@@ -34,10 +34,10 @@ return array(
     'label' => 'Campaign management',
 	'description' => 'TAO Campaign extension',
     'license' => 'GPL-2.0',
-    'version' => '3.0.0',
+    'version' => '3.1.0',
 	'author' => 'Open Assessment Technologies',
 	'requires' => array(
-	    'tao' => '>=21.0.0',
+	    'tao' => '>=21.15.0',
 		'taoDelivery' => '11.0.0'
 	),
 	'managementRole' => 'http://www.tao.lu/Ontologies/generis.rdf#taoCampaignManager',
